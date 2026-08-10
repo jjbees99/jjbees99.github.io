@@ -1,0 +1,1 @@
+export function embedUrl(type:'youtube'|'vimeo',src:string){if(src.includes('/embed/')||src.includes('player.vimeo.com'))return src;if(type==='youtube'){const id=src.match(/(?:v=|youtu\.be\/)([^&?/]+)/)?.[1];return id?`https://www.youtube-nocookie.com/embed/${id}`:src}const id=src.match(/vimeo\.com\/(\d+)/)?.[1];return id?`https://player.vimeo.com/video/${id}`:src}

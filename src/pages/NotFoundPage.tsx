@@ -1,0 +1,1 @@
+import { Link } from 'react-router-dom';export function NotFoundPage(){return <main id="main" className="not-found"><p>404 / signal lost</p><h1>Nothing measured here.</h1><Link className="button solid" to="/">Return home</Link></main>}

@@ -1,0 +1,98 @@
+import type { Project } from '../types/content';
+
+const media = `${import.meta.env.BASE_URL}media/`;
+const image = `${media}projects/`;
+const video = `${media}videos/`;
+
+export const projects: Project[] = [
+  {
+    slug: 'the-swarm', title: 'The Swarm', subtitle: 'Collective movement at architectural scale', year: 'Jan 2024 – Mar 2024', category: 'Digital Art',
+    tags: ['TouchDesigner', 'Python', 'Boids', 'Installation'], featured: true,
+    summary: 'An award-winning digital installation inspired by the collective movement of swallows in flight.',
+    description: [
+      'The Swarm is a digital art installation inspired by the collective movement of swallows in flight. Awarded the People’s Choice Award at the 2024 Hackstarter competition at Imperial College London Hackspace, the piece reimagines digital graffiti by transforming disused spaces into dynamic, living environments.',
+      'The work simulates a flock of 50,000 individual points, first prototyped through a Python implementation referencing the classic Boids algorithm, before being developed further in TouchDesigner. By translating natural flocking behaviours into a digital medium, The Swarm explores how biomimicry can enliven urban environments and reshape how we experience shared spaces.'
+    ],
+    coverImage: image + 'magnetic-oscillator.svg', video: { type: 'local', src: video + 'Swarm.mp4', poster: image + 'magnetic-oscillator.svg' },
+    methods: ['Python prototyping', 'Boids flocking algorithm', 'TouchDesigner', 'Large-scale digital installation'],
+    results: ['People’s Choice Award at the 2024 Hackstarter competition, Imperial College London Hackspace.']
+  },
+  {
+    slug: 'orb', title: 'ORB', subtitle: 'Biomimetic texture, light and movement', year: '2025', category: 'Digital Art',
+    tags: ['TouchDesigner', 'Biomimicry', 'Installation', 'Moving image'], featured: false,
+    summary: 'An ethereal digital artwork created for an exhibition at London’s Fabric nightclub.',
+    description: [
+      'Orb was one of five works I created to showcase at an exhibition in London’s Fabric nightclub, organised in collaboration with Unity Sounds, an inter-university arts collective. Positioned behind the main stage, the piece was designed to loom over the audience, deepening both the visual and auditory atmosphere of the event.',
+      'With an ethereal aesthetic, Orb explored the fusion of layered textures drawn from natural references, particularly ripple-like patterns inspired by fluid and biological systems. By weaving these biomimetic textures into a digital form, the piece sought to evoke a sense of organic depth and movement, enhancing the immersive environment of the exhibition.'
+    ],
+    coverImage: image + 'hyperspectral.svg', video: { type: 'local', src: video + 'ORB.mp4', poster: image + 'hyperspectral.svg' }, collaborators: ['Unity Sounds'],
+    methods: ['Layered generative textures', 'Biomimetic visual research', 'Large-scale moving-image installation'],
+    results: ['Exhibited behind the main stage at Fabric, London.']
+  },
+  {
+    slug: 'optoblock', title: 'Optoblock', subtitle: 'Modular Organisation App', year: 'Jun 2026 – Present', category: 'Software',
+    tags: ['Application development', 'Speech recognition', 'NLP', 'UI/UX'], featured: true,
+    summary: 'A modular organisation app that lets people build a productivity system around their own needs.',
+    description: [
+      'Most productivity apps force users into a fixed structure, even though people organise their work, finances, reminders and personal projects in very different ways. Optoblock is a modular organisation app designed to let users build a system around their own needs.',
+      'The application uses a draggable, tile-based interface and modular tools for tasks, notes, reminders and planning. A voice-driven “brain dump” converts unstructured speech into organised actions.'
+    ],
+    coverImage: image + 'optoblock.png', methods: ['Draggable tile-based interface', 'User-journey mapping', 'Voice-driven capture', 'Iterative testing and user feedback'],
+    results: ['Developed a functioning modular application prototype combining flexible organisation with AI-assisted input.', 'Development continues through new modules, interface improvements and further user testing.']
+  },
+  {
+    slug: 'real-time-patellar-tracking', title: 'Real-Time Patellar Tracking', subtitle: 'Master’s Thesis', year: 'Oct 2026 – Present', category: 'Bioengineering',
+    tags: ['Stretch sensors', 'Wearable sensing', 'Python', 'Signal processing'], featured: true,
+    summary: 'Ongoing research into a wearable method for estimating patellar position during movement.',
+    description: [
+      'Inertial measurement units can estimate general gait characteristics but cannot accurately determine the position of specific anatomical landmarks such as the patella. Reliable patellar tracking could improve the control and evaluation of rehabilitation systems, including neuromuscular electrical stimulation.',
+      'The research develops wearable stretch-sensor prototypes, compares them with reference motion data, and investigates repeatability, comfort and real-time estimation methods with input from patients, researchers and clinicians.'
+    ],
+    coverImage: image + 'patellar.svg', methods: ['Wearable stretch-sensor prototyping', 'Reference motion comparison', 'Real-time position estimation', 'Repeatability and comfort evaluation'],
+    results: ['Ongoing Master’s research. The intended outcome is a validated wearable method for real-time gait monitoring and rehabilitation systems.']
+  },
+  {
+    slug: 'window-cleaner', title: 'Window Cleaner', subtitle: 'Windows File Management App', year: 'Jul 2026 – Aug 2026', category: 'Software',
+    tags: ['Python', 'Windows file system', 'Metadata analysis', 'GUI'], featured: false,
+    summary: 'A transparent file-management utility for finding unnecessary files without hiding decisions from the user.',
+    description: [
+      'Windows computers can gradually become filled with old downloads, temporary files, oversized folders and forgotten documents. Existing cleaning tools can also make it difficult for users to understand what is being removed.',
+      'Window Cleaner scans user-selected folders and organises files using type, size, location and age. Safeguards keep every move or deletion inspectable rather than making cleanup fully automatic.'
+    ],
+    coverImage: image + 'camera-trigger.svg', methods: ['User-selected folder scanning', 'File metadata classification', 'GUI development', 'Review-before-action safeguards'],
+    results: ['Created a focused utility that makes computer cleanup more controlled, legible and transparent.']
+  },
+  {
+    slug: 'high-speed-motion-rotation-tracker', title: 'High-Speed Video Motion and Rotation Tracker', year: 'July – August 2026', category: 'Research',
+    tags: ['Python', 'OpenCV', 'High-speed imaging', 'Signal processing'], featured: false,
+    summary: 'An interactive computer-vision workflow for measuring simultaneous translation and rotation in experimental footage.',
+    description: [
+      'Experimental objects can rotate and translate at the same time, making their movement difficult to measure manually from high-speed footage. A visible marker may also change position, scale or orientation throughout the video.',
+      'The tool defines a circular tracking region and orientation reference, follows centre position and rotational angle frame by frame, and adds overlays so the analysis can be visually checked.'
+    ],
+    coverImage: image + 'rotational-tracking.svg', methods: ['Interactive tracking-region definition', 'Centre and angular tracking', 'Visual validation overlays', 'Time-series and CSV export'],
+    results: ['Produces an annotated tracking video and CSV signals for direct comparison with magnetic sensors or other experimental measurements.']
+  },
+  {
+    slug: 'csv-oscilloscope-video-generator', title: 'CSV-to-Oscilloscope Video Generator', year: 'July – August 2026', category: 'Software',
+    tags: ['Python', 'CSV', 'Matplotlib', 'JSON'], featured: false,
+    summary: 'A configurable tool that turns experimental time-series data into synchronisable oscilloscope-style video.',
+    description: [
+      'Static graphs are difficult to compare with slow-motion experimental footage because they do not show how a signal changes at the corresponding moment in the video.',
+      'The application imports CSV signals, renders a moving trace, and provides controls for speed, plot range, timing, labels and resolution. Reusable JSON files retain experiment-specific settings.'
+    ],
+    coverImage: image + 'waveform.svg', methods: ['CSV signal import', 'Matplotlib animation', 'Video rendering', 'JSON configuration', 'Footage synchronisation'],
+    results: ['Creates standard video files that can be synchronised with camera footage to compare physical movement with measured sensor behaviour.']
+  },
+  {
+    slug: 'miniature-street-art', title: 'Miniature Street Art and 3D-Printed Objects', year: 'Feb 2026', category: 'Digital Art',
+    tags: ['Blender', '3D modelling', 'CAD', '3D printing'], featured: false,
+    summary: 'An ongoing collection translating digital designs into small physical artworks for public space.',
+    description: [
+      'Large-scale public artwork often requires significant space, materials and installation resources. This project explores how small 3D-printed objects can instead be used as accessible forms of street art, visual storytelling and personal expression.',
+      'Miniature characters, objects and sculptural forms are modelled digitally, adapted for reliable printing, physically prototyped and refined. Placement and photography become part of how each piece acquires meaning.'
+    ],
+    coverImage: image + 'thin-film.svg', gallery: [image + 'tracking-grid.svg'], methods: ['Blender modelling', 'Mesh preparation', 'CAD', '3D printing', 'Site-responsive placement and photography'],
+    results: ['Developed an expanding collection combining engineering, rapid prototyping and street-art-inspired expression.']
+  }
+];
