@@ -39,28 +39,6 @@ export const projects: Project[] = [
     results: ['Produces an annotated tracking video and CSV signals for direct comparison with magnetic sensors or other experimental measurements.']
   },
   {
-    slug: 'window-cleaner', title: 'Window Cleaner', subtitle: 'Windows File Management App', year: 'Jul 2026 – Aug 2026', categories: ['Software', 'Engineering', 'Research'],
-    tags: ['Python', 'Windows file system', 'Metadata analysis', 'GUI'], featured: false,
-    summary: 'A transparent file-management utility for finding unnecessary files without hiding decisions from the user.',
-    description: [
-      'Windows computers can gradually become filled with old downloads, temporary files, oversized folders and forgotten documents. Existing cleaning tools can also make it difficult for users to understand what is being removed.',
-      'Window Cleaner scans user-selected folders and organises files using type, size, location and age. Safeguards keep every move or deletion inspectable rather than making cleanup fully automatic.'
-    ],
-    coverImage: image + 'camera-trigger.svg', methods: ['User-selected folder scanning', 'File metadata classification', 'GUI development', 'Review-before-action safeguards'],
-    results: ['Created a focused utility that makes computer cleanup more controlled, legible and transparent.']
-  },
-  {
-    slug: 'csv-oscilloscope-video-generator', title: 'CSV-to-Oscilloscope Video Generator', year: 'July – August 2026', categories: ['Software', 'Research', 'Video'],
-    tags: ['Python', 'CSV', 'Matplotlib', 'JSON'], featured: false,
-    summary: 'A configurable tool that turns experimental time-series data into synchronisable oscilloscope-style video.',
-    description: [
-      'Static graphs are difficult to compare with slow-motion experimental footage because they do not show how a signal changes at the corresponding moment in the video.',
-      'The application imports CSV signals, renders a moving trace, and provides controls for speed, plot range, timing, labels and resolution. Reusable JSON files retain experiment-specific settings.'
-    ],
-    coverImage: image + 'waveform.svg', methods: ['CSV signal import', 'Matplotlib animation', 'Video rendering', 'JSON configuration', 'Footage synchronisation'],
-    results: ['Creates standard video files that can be synchronised with camera footage to compare physical movement with measured sensor behaviour.']
-  },
-  {
     slug: 'miniature-street-art', title: 'Miniature Street Art and 3D-Printed Objects', year: 'Feb 2026', categories: ['Digital Art', 'Engineering', 'Robotics'],
     tags: ['Blender', '3D modelling', 'CAD', '3D printing'], featured: false,
     summary: 'An ongoing collection translating digital designs into small physical artworks for public space.',
@@ -118,5 +96,27 @@ export const projects: Project[] = [
     coverImage: image + 'magnetic-oscillator.svg', video: { type: 'local', src: video + 'Swarm.mp4', poster: image + 'magnetic-oscillator.svg' },
     methods: ['Python prototyping', 'Boids flocking algorithm', 'TouchDesigner', 'Large-scale digital installation'],
     results: ['People’s Choice Award at the 2024 Hackstarter competition, Imperial College London Hackspace.']
-  }
+  },
+  {
+    slug: 'window-cleaner', title: 'Window Cleaner', subtitle: 'Windows File Management App', year: 'Jul 2026 – Aug 2026', categories: ['Software', 'Engineering', 'Research'],
+    tags: ['Python', 'Windows file system', 'Metadata analysis', 'GUI'], featured: false,
+    summary: 'A transparent file-management utility for finding unnecessary files without hiding decisions from the user.',
+    description: [
+      'Windows computers can gradually become filled with old downloads, temporary files, oversized folders and forgotten documents. Existing cleaning tools can also make it difficult for users to understand what is being removed.',
+      'Window Cleaner scans user-selected folders and organises files using type, size, location and age. Safeguards keep every move or deletion inspectable rather than making cleanup fully automatic.'
+    ],
+    coverImage: image + 'camera-trigger.svg', methods: ['User-selected folder scanning', 'File metadata classification', 'GUI development', 'Review-before-action safeguards'],
+    results: ['Created a focused utility that makes computer cleanup more controlled, legible and transparent.']
+  },
+  {
+    slug: 'csv-oscilloscope-video-generator', title: 'CSV-to-Oscilloscope Video Generator', year: 'July – August 2026', categories: ['Software', 'Research', 'Video'],
+    tags: ['Python', 'CSV', 'Matplotlib', 'JSON'], featured: false,
+    summary: 'A configurable tool that turns experimental time-series data into synchronisable oscilloscope-style video.',
+    description: [
+      'Static graphs are difficult to compare with slow-motion experimental footage because they do not show how a signal changes at the corresponding moment in the video.',
+      'The application imports CSV signals, renders a moving trace, and provides controls for speed, plot range, timing, labels and resolution. Reusable JSON files retain experiment-specific settings.'
+    ],
+    coverImage: image + 'waveform.svg', methods: ['CSV signal import', 'Matplotlib animation', 'Video rendering', 'JSON configuration', 'Footage synchronisation'],
+    results: ['Creates standard video files that can be synchronised with camera footage to compare physical movement with measured sensor behaviour.']
+  },
 ];
