@@ -14,7 +14,7 @@ export function AboutPage() {
       <div className="about-lead">
         <img className="portrait-photo" src={portraitUrl} alt="Portrait of Jacob Beeson" />
         <p>
-          I’m Jacob, a Molecular Bioengineering MEng student at Imperial College London. I build systems where software, sensors and physical prototypes meet—from experimental tools and wearable devices to computer vision, robotics and interactive digital work.
+          I’m Jacob, a Molecular Bioengineering MEng student at Imperial College London. I build systems where software, sensors and physical prototypes meet. From experimental tools and wearable devices to computer vision, robotics and interactive digital work.
         </p>
       </div>
 
@@ -36,7 +36,7 @@ export function AboutPage() {
         <section>
           <h2>Experience</h2>
           <p>
-            My work includes magnetic sensing and nanorobotics research in Dresden, wearable electrochemical sensing at ICIQ in Tarragona, and an MRI-compatible knee-loading device at Imperial. I also founded Optoblock and Sansoperator, and won first place at the Imperial CGCU Makeathon for a mountain-rescue wearable IoT device.
+            My work includes magnetic sensing and nanorobotics research in Dresden, wearable electrochemical sensing at ICIQ in Tarragona, and an Masters project work on using stretch sensors for patella tracking. I also founded Optoblock and Sansoperator, and won first place at the Imperial CGCU Makeathon for a mountain-rescue wearable IoT device.
           </p>
         </section>
         <section>
