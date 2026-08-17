@@ -22,7 +22,7 @@ export function ProjectMedia({ project }: { project: Project }) {
   }, [isLocalVideo]);
 
   return (
-    <div className="project-media">
+    <div className={`project-media${project.externalUrl ? ' project-media--contained' : ''}`}>
       {isLocalVideo ? (
         <video
           ref={videoRef}

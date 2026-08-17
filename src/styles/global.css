@@ -66,6 +66,9 @@ html,body,#root{width:100%;max-width:100%;overflow-x:hidden}
 
 /* Scroll-triggered project films fill the same editorial media frame as stills. */
 .project-media video{width:100%;height:100%;object-fit:cover;background:var(--black)}
+.project-media--contained{background:var(--orange)}
+.project-media--contained img{object-fit:contain;padding:clamp(2rem,6vw,6rem)}
+.detail-cover--contained{object-fit:contain;background:var(--orange);padding:clamp(3rem,10vw,10rem)}
 
 /* Single centred footer identity, replacing the oversized J/B lettering. */
 .footer-logo{display:block;width:clamp(8rem,12vw,12rem);margin:0 auto}

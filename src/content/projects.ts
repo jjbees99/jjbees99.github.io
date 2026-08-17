@@ -72,6 +72,30 @@ export const projects: Project[] = [
     results: ['Developed an expanding collection combining engineering, rapid prototyping and street-art-inspired expression.']
   },
   {
+    slug: 'heads', title: 'Heads', subtitle: 'Digital graffiti in the landscape', year: 'Feb 2026 – Mar 2026', categories: ['Digital Art', 'Video'],
+    tags: ['Projection art', 'Digital graffiti', 'Site-responsive installation', 'Moving image'], featured: false,
+    summary: 'A site-responsive projection work created with a local digital art collective, blending digital figures into the surrounding landscape.',
+    description: [
+      'Heads was created as part of a local digital art collective exploring projection as a form of temporary digital graffiti. Rather than placing a permanent object in public space, the work used light and moving image to transform the character of the landscape.',
+      'Projected heads appeared across outdoor surfaces so that the digital artwork could blend into the physical environment—and the textures, contours and atmosphere of the site could become part of the artwork in return.'
+    ],
+    coverImage: image + 'thin-film.svg', video: { type: 'local', src: video + 'Heads.mp4', poster: image + 'thin-film.svg' },
+    methods: ['Site-responsive projection', 'Moving-image composition', 'Outdoor installation', 'Collective art practice'],
+    results: ['Created and presented as a temporary digital-graffiti intervention with a local digital art collective.']
+  },
+  {
+    slug: 'naive-tattoos', title: 'Naive Tattoos', subtitle: 'Tattoo studio website', year: '2026', categories: ['Software', 'Digital Art'],
+    tags: ['Web design', 'Web development', 'Brand identity', 'Responsive design'], featured: false,
+    summary: 'A distinctive portfolio website created for Naive Tattoos, a tattoo studio in Dresden.',
+    description: [
+      'I designed and built a website for Naive Tattoos, a tattoo studio in Dresden, the city where I was living. The site gives the studio a focused digital home while keeping its visual identity and artwork at the centre of the experience.',
+      'The project translated the studio’s bold orange identity into a responsive web experience, making it easy for visitors to discover the work and connect with the studio.'
+    ],
+    coverImage: image + 'Orange logo.png', externalUrl: 'https://jjbees99.github.io/NaiveTattoo/',
+    methods: ['Visual direction', 'Responsive interface design', 'Front-end development', 'GitHub Pages deployment'],
+    results: ['Launched a live portfolio website for the Dresden tattoo studio.']
+  },
+  {
     slug: 'orb', title: 'ORB', subtitle: 'Biomimetic texture, light and movement', year: '2025', categories: ['Digital Art', 'Bioengineering', 'Video'],
     tags: ['TouchDesigner', 'Biomimicry', 'Installation', 'Moving image'], featured: false,
     summary: 'An ethereal digital artwork created for an exhibition at London’s Fabric nightclub.',
