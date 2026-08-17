@@ -68,7 +68,7 @@ export const projects: Project[] = [
       'Large-scale public artwork often requires significant space, materials and installation resources. This project explores how small 3D-printed objects can instead be used as accessible forms of street art, visual storytelling and personal expression.',
       'Miniature characters, objects and sculptural forms are modelled digitally, adapted for reliable printing, physically prototyped and refined. Placement and photography become part of how each piece acquires meaning.'
     ],
-    coverImage: image + 'thin-film.svg', gallery: [image + 'tracking-grid.svg'], methods: ['Blender modelling', 'Mesh preparation', 'CAD', '3D printing', 'Site-responsive placement and photography'],
+    coverImage: image + '3d street art.jpg', methods: ['Blender modelling', 'Mesh preparation', 'CAD', '3D printing', 'Site-responsive placement and photography'],
     results: ['Developed an expanding collection combining engineering, rapid prototyping and street-art-inspired expression.']
   },
   {
